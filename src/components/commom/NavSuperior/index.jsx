@@ -17,15 +17,18 @@ export default function NavSuperior() {
     <div className={`nav-superior__div`}>
         <div>PIW Project</div>
 
-        <div className=''>
+        <div className='nav-superior__action-holder'>
           <button value={true} className={`nav-superior__button${buttonClass(1)}`}>
               Linha do Tempo
           </button>
           <button className={`nav-superior__button${buttonClass(2)}`}>
               Postar
           </button>
-        </div>
 
+          <div className='logged-user__div'>
+            Pessoa Logada
+          </div>
+        </div>
     </div>
   )
 }

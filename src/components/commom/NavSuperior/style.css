@@ -5,8 +5,17 @@
     width: 700px;
 }
 
-.nav-superior__button--pressed{
+.nav-superior__button--pressed {
     background-color: #7a7a7a;
     color: rgb(221, 221, 221);
+}
+
+.nav-superior__action-holder {
+    display: flex;
+}
+
+.logged-user__div {
+    display: flex;
+    margin-left: 1rem;
 }
 
