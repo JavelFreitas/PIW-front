@@ -1,0 +1,12 @@
+.nav-superior__div {
+    display: flex;
+    justify-content: space-between;
+
+    width: 700px;
+}
+
+.nav-superior__button--pressed{
+    background-color: #7a7a7a;
+    color: rgb(221, 221, 221);
+}
+
