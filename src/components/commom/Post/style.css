@@ -1,0 +1,23 @@
+.post__div {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 4px;
+
+    width: 300px;
+    border-radius: 12px;
+    border: 1px black solid;
+
+    margin: 1rem 0 0 1rem;
+}
+
+.nome-usuario__div {
+    display: flex;
+}
+
+.curtidas__div {
+    display: flex;
+    justify-content: space-between;
+}

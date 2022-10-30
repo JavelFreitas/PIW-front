@@ -4,10 +4,16 @@
 
     width: 700px;
 }
+.nav-superior__button {
+    border: 1px solid rgb(111, 111, 111);
+    border-radius: 12px;
+}
 
 .nav-superior__button--pressed {
-    background-color: #7a7a7a;
-    color: rgb(221, 221, 221);
+    background-color: rgb(122, 122, 122, 0.5);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(111, 111, 111);
+    border-radius: 12px;
 }
 
 .nav-superior__action-holder {
@@ -17,5 +23,6 @@
 .logged-user__div {
     display: flex;
     margin-left: 1rem;
+    align-items: center;
 }
 

@@ -1,8 +1,10 @@
 import React, { useCallback, useState } from 'react'
-import './style.css';
+import './style.css'
+import Avatar from '@mui/material/Avatar';
+import { deepPurple } from '@mui/material/colors';
 
 export default function NavSuperior() {
-  let [buttonPressed, setButtonPressed] = useState(1);
+  let [buttonPressed, ] = useState(1);
 
   let buttonClass = useCallback(
     (button) => {
@@ -26,7 +28,8 @@ export default function NavSuperior() {
           </button>
 
           <div className='logged-user__div'>
-            Pessoa Logada
+            Usuário Logado
+            <Avatar sx={{ bgcolor: deepPurple[500] }}>UL</Avatar>
           </div>
         </div>
     </div>

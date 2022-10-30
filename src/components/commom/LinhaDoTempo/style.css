@@ -1,0 +1,7 @@
+.linha-do-tempo__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 700px;
+}
