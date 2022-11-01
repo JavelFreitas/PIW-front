@@ -1,9 +1,11 @@
 .nav-superior__div {
     display: flex;
     justify-content: space-between;
+    padding: 2px;
 
     width: 700px;
 }
+
 .nav-superior__button {
     border: 1px solid rgb(111, 111, 111);
     border-radius: 12px;
@@ -25,4 +27,3 @@
     margin-left: 1rem;
     align-items: center;
 }
-

@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 
 export default function Post(props) {
   return (
@@ -9,7 +10,10 @@ export default function Post(props) {
         <div>{props.texto}</div>
         <div className='curtidas__div'>
           Curtidas: {props.qtdLikes}
-          <ThumbUpIcon/>
+          { props.id === 1
+            ? <ThumbUpIcon/>
+            : <ThumbUpOffAltIcon/>
+          }
         </div>
     </div>
   )
