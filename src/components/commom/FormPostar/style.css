@@ -1,0 +1,11 @@
+.form-postar__div {
+    display: flex;
+    flex-direction: column;
+
+    align-self: center;
+    align-items: flex-start;
+}
+
+.message__textarea {
+    margin-bottom: 1rem;
+}

@@ -21,3 +21,27 @@
     display: flex;
     justify-content: space-between;
 }
+
+.comments__input{
+    width: -webkit-fill-available;
+}
+
+.thread__div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 0.2rem;
+    background-color: rgb(111, 111, 111, 0.14);
+    border: 1px solid rgb(111, 111, 111, 0.3);
+    margin-bottom: 0.2rem;
+}
+
+.thread-comment__div {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: -webkit-fill-available;
+    margin: 0.5rem;
+    background-color: rgb(111, 111, 111, 0.3);
+}

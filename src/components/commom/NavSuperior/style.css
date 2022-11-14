@@ -2,8 +2,10 @@
     display: flex;
     justify-content: space-between;
     padding: 2px;
+    align-self: center;
 
     width: 700px;
+    margin-bottom: 2rem;
 }
 
 .nav-superior__button {

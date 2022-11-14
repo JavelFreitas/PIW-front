@@ -1,10 +1,12 @@
 import './App.css';
-import PaginaFeed from './components/pages/PaginaFeed';
+import Router from './routes/Router';
+import NavSuperior from './components/commom/NavSuperior';
 
 function App() {
   return (
     <div className="App">
-      <PaginaFeed/>
+      <NavSuperior/>
+      <Router/>
     </div>
   );
 }

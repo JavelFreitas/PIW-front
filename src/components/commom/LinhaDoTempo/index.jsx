@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Post from '../Post'
 import './style.css'
 
 export default function LinhaDoTempo() {
+
+  useEffect(() => {
+    document.title = 'PIW | Linha do Tempo'
+  }, [])
   let infoPosts = [
     {
       id: 1,
