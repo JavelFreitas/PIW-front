@@ -6,7 +6,7 @@ import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 export default function Post(props) {
   let mockComments = [
     {author: 'Joao', comment: 'Hello'},
-    {author: 'Joao', comment: 'Concordo'}
+    {author: 'Pedro', comment: 'Concordo'}
   ]
   return (
     <div className='post__div'>
@@ -26,7 +26,7 @@ export default function Post(props) {
               return (
                 <div
                   className='thread__div'
-                  key={comment.author + props.nomeUsuario}
+                  key={comment.author + props.id + new Date().getMilliseconds()}
                 >
                   {comment.author}
                   <div className='thread-comment__div'>

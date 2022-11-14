@@ -25,7 +25,11 @@ export default function LinhaDoTempo() {
   return (
     <div className='linha-do-tempo__div'>
       {infoPosts.map( post => {
-        return (<Post {...post}/>)
+        return (
+          <Post 
+            key={post.id} 
+            {...post}/>
+          )
         })}      
     </div>
   )

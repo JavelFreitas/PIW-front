@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import './style.css'
 import Avatar from '@mui/material/Avatar';
 import { deepPurple } from '@mui/material/colors';
@@ -6,16 +6,15 @@ import { useNavigate } from 'react-router-dom';
 
 export default function NavSuperior() {
   let [buttonPressed, setButtonPressed] = useState(1);
+  const navigate = useNavigate();
 
   let buttonClass = useCallback(
     (button) => {
-      console.log(button, buttonPressed);
       if(button !== buttonPressed) return '';
       return '--pressed';
     },
     [buttonPressed],
   )
-  const navigate = useNavigate();
 
   const handleNavClick = useCallback((path) => {
     let pressed = {
@@ -26,7 +25,11 @@ export default function NavSuperior() {
     
     setButtonPressed(pressed);
     navigate(path);
-  }, [navigate]);
+  }, [navigate, setButtonPressed]);
+
+  useEffect(() => {
+    handleNavClick(window.location.pathname);
+  }, [handleNavClick])
   
   return (
     <div className={`nav-superior__div`}>

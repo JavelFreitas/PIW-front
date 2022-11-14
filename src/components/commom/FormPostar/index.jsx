@@ -16,6 +16,7 @@ export default function FormPostar() {
         cols="40" 
         rows="10"
         value={'Escreva sua mensagem'}
+        onChange={() => {}}
         className='message__textarea'
       > 
           
